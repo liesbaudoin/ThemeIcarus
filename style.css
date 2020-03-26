@@ -1,0 +1,163 @@
+/*
+Theme name: Asmae
+Theme URI:
+Description: Zelfgemaakt Wordpress thema
+Version: 0.1
+Tags: two-columns
+Authors: Asmae and Liesbeth
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .main {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+.row {
+    background-color: whitesmoke;
+}
+
+.header {
+    background-color: rgb(135, 250, 150);
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: darkolivegreen;
+    font: 14px Helvetica, Arial sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0 #cccccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: square;
+}
+
+li {
+    margin-left: 15px;
+}
+
+.footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: thistle;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block;
+    color: #1142ff;
+    text-align: center;
+    padding: 16px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
