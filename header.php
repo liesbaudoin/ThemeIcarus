@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HtmlTheme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
+    <!--dit is wp-head-->
     <?php wp_head(); ?>
+    <!--na wp-head-->
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                     <img src="images/IcarusHeaderLogoKlein.png">
                 </div>
                 <div class="col-4 menu">
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );//header menu moet hetzelfde zijn als 1 van de keys van je array in de function register_my_menus ?>
                 </div>
                 <div class="col-4 social">
                     <link id="socialmedia-container">

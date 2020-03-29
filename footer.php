@@ -7,7 +7,7 @@
             <p>Resize the browser window to see how the content respond to the resizing.</p>
         </div>
         </div>
-        <?php wp_footer(); ?>
+        <?php wp_footer(); //de zwarte balk waarmee je naar de dashboard kan gaan?>
 </body>
 
 </html>
