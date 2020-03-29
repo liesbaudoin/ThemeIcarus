@@ -22,12 +22,7 @@
                     <img src="images/IcarusHeaderLogoKlein.png">
                 </div>
                 <div class="col-4 menu">
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                        <li>Item 4</li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                 </div>
                 <div class="col-4 social">
                     <link id="socialmedia-container">
