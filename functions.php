@@ -7,6 +7,7 @@ function register_my_menus()
         array(
             'header-menu' => __('Header Menu'), //key is techniche naam waarde is het label op het dashboard
             'extra-menu' => __('Extra Menu'),
+            'footer-menu'=> __('Footer Menu')
         
         )
     );
