@@ -21,7 +21,7 @@
 <div class="row header">
 
                 <div class="col-4 logo">
-                    <img src="images/IcarusHeaderLogoKlein.png">
+                    <?php theme_icarus_site_logo() ?>
                 </div>
                 <div class="col-4 menu">
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );//header menu moet hetzelfde zijn als 1 van de keys van je array in de function register_my_menus ?>
