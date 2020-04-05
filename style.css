@@ -3,7 +3,7 @@ Theme name: Asmae
 Theme URI:
 Description: Zelfgemaakt Wordpress thema
 Version: 0.1
-Tags: two-columns
+Tags: two-columns, custom-background
 Authors: Asmae and Liesbeth
 */
 
@@ -83,7 +83,6 @@ Authors: Asmae and Liesbeth
 }
 
 body {
-    background-color: darkolivegreen;
     font: 14px Helvetica, Arial sans-serif;
     margin: 0px;
 }

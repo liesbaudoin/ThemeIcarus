@@ -33,8 +33,16 @@ function theme_icarus_theme_support() {
             'flex-width'  => true,
         )
     );
+    // Custom background color.
+	add_theme_support(
+		'custom-background',//je body moet deze classname hebben. Door deze functie krijg je een stukje inline css erbij.en uit je stylesheet moet je deze regel verwijderen anders overschrijft hij die
+		array(
+			'default-color' => '#556b2f',
+		)
+	);
 }
 
 add_action('after_setup_theme', 'theme_icarus_theme_support'); //als wordpress de customizer gaat maken, roept die deze functie aan.
 
 require get_template_directory() . '/inc/template-tags.php';
+

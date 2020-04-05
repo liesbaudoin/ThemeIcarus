@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,25 +11,31 @@
     <!--na wp-head-->
 </head>
 
-<body>
-<?php
-		wp_body_open();
-		?>
+<body class="custom-background">
+    <?php
+    wp_body_open();
+    ?>
     <div class="main">
 
-<div class="row header">
+        <div class="row header">
 
-                <div class="col-4 logo">
-                    <?php theme_icarus_site_logo() ?>
-                </div>
-                <div class="col-4 menu">
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );//header menu moet hetzelfde zijn als 1 van de keys van je array in de function register_my_menus ?>
-                </div>
-                <div class="col-4 social">
-                    <link id="socialmedia-container">
-                    <a href="https://www.facebook.com"> <img src="images/facebook.png"></a>
-                    <img src="images/twitter.png">
-                </div>
+            <div class="col-4 logo">
+                <?php theme_icarus_site_logo() ?>
+            </div>
+            <div class="col-4 menu">
+                <?php
+                $has_header_menu = has_nav_menu('header-menu');
+                if ($has_header_menu) {
+                    echo "er is een menu";
+                    wp_nav_menu(array('theme_location' => 'header-menu'));
+                } //header menu moet hetzelfde zijn als 1 van de keys van je array in de function register_my_menus 
+                ?>
+            </div>
+            <div class="col-4 social">
+                <link id="socialmedia-container">
+                <a href="https://www.facebook.com"> <img src="images/facebook.png"></a>
+                <img src="images/twitter.png">
+            </div>
 
         </div>
         <div class="row">
