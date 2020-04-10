@@ -9,7 +9,9 @@
             $has_footer_menu = has_nav_menu( 'footer-menu' );
             
             if($has_footer_menu){
-            wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );}?>
+            wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );}
+            
+            ?>
         </div>
         </div>
         <?php wp_footer(); //de zwarte balk waarmee je naar de dashboard kan gaan?>

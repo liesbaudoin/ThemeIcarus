@@ -26,7 +26,7 @@
                 <?php
                 $has_header_menu = has_nav_menu('header-menu');
                 if ($has_header_menu) {
-                    echo "er is een menu";
+                
                     wp_nav_menu(array('theme_location' => 'header-menu'));
                 } //header menu moet hetzelfde zijn als 1 van de keys van je array in de function register_my_menus 
                 ?>
