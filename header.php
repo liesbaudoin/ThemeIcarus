@@ -24,6 +24,7 @@
             </div>
             <div class="col-4 menu">
                 <?php
+                //de if statement om het menu weg te laten als je het niet gekozen hebt.
                 $has_header_menu = has_nav_menu('header-menu');
                 if ($has_header_menu) {
                 
