@@ -66,7 +66,7 @@ function theme_icarus_customize_register(WP_Customize_Manager $wp_customize) // 
         'header_footer_background_color',
         array(
             'default'           => '#87fa96',
-            'sanitize_callback' => 'sanitize_hex_color',
+           // 'sanitize_callback' => 'sanitize_hex_color', waarom is dit?
             'transport'         => 'postMessage',
         )
     );
@@ -76,7 +76,7 @@ function theme_icarus_customize_register(WP_Customize_Manager $wp_customize) // 
             $wp_customize,
             'header_footer_background_color',//naam van de setting waar de control in moet komen
             array(
-                'label'   => __('Header &amp; Footer Background Color', 'twentytwenty'),
+                'label'   => __('Header & Footer Background Color', 'ThemeIcarus'),
                 'section' => 'header_footer_color', 
             )
         )
