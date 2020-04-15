@@ -77,7 +77,7 @@ function theme_icarus_customize_register(WP_Customize_Manager $wp_customize) // 
             'header_footer_background_color',//naam van de setting waar de control in moet komen
             array(
                 'label'   => __('Header & Footer Background Color', 'ThemeIcarus'),
-                'section' => 'header_footer_color', 
+                'section' => 'header_footer_color', //hoe kom je achter de id s van die sections
             )
         )
     );
