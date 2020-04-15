@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HtmlTheme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
-    <!--dit is wp-head-->
+    <!--dit is wp-head dit is een hook, als die wordt aangeroepen, wordt in fuctions.php door add_action() hier een functie voor aangeroepen-->
     <?php wp_head(); ?>
     <!--na wp-head-->
 </head>
